@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 export default function Section3() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ['/Coupon1.png', '/Coupon2.png', '/Coupon3.png'];
+  const images = ['/coupon1.png', '/coupon2.png', '/coupon3.png'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -47,15 +47,14 @@ export default function Section3() {
           
           {/* Right half - text content */}
           <div className="w-full md:w-1/2 text-left md:text-left z-10 p-4">
-            <p className="text-2xl md:text-7xl lg:text-2xl font-bold mb-1 animate-fade-in text-gray-900 font-serif">
-            Unlock daily dining deals and unbeatable coupons
+            <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 text-black animate-slide-up font-serif whitespace-nowrap">
+            Unlock unbeatables<br />coupons and dining deals
+            every day.
             </p>
-            <p className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-gray-900 animate-slide-up font-serif">
-              Save Big
+            <p className="text-lg md:text-xl mb-2 text-gray-800 opacity-90 animate-slide-up font-dm serif">
+              From top restaurants<br/> to hidden gems, save while you indulge.
             </p>
-            <p className="text-lg md:text-xl mb-6 text-gray-800 opacity-90 animate-slide-up font-dm serif">
-            at top restaurants and hidden gems 
-            </p>
+
             <p className="text-xs mb-2 text-gray-800 opacity-90 animate-slide-up font-dm serif">
               Download Quddle.ai
             </p>

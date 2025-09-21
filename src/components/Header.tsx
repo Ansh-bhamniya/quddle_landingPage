@@ -29,7 +29,7 @@ export default function Header({ currentSection }: HeaderProps) {
               variant="ghost"
               className={`text-lg transition-colors duration-300 ${
                 isInSection2 || isInSection3
-                  ? 'text-black hover:text-gray-800' 
+                  ? 'text-black hover:text-white' 
                   : isScrolled 
                     ? 'text-white hover:text-gray-200' 
                     : 'text-black hover:text-gray-200'
@@ -42,7 +42,7 @@ export default function Header({ currentSection }: HeaderProps) {
               variant="ghost"
               className={`text-lg transition-colors duration-300 ${
                 isInSection2 || isInSection3
-                  ? 'text-black hover:text-gray-800' 
+                  ? 'text-black hover:text-white' 
                   : isScrolled 
                     ? 'text-white hover:text-gray-200' 
                     : 'text-black hover:text-gray-200'
@@ -54,7 +54,7 @@ export default function Header({ currentSection }: HeaderProps) {
               variant="ghost"
               className={`text-lg transition-colors duration-300 ${
                 isInSection2 || isInSection3
-                  ? 'text-black hover:text-gray-800' 
+                  ? 'text-black hover:text-white' 
                   : isScrolled 
                     ? 'text-white hover:text-gray-200' 
                     : 'text-black hover:text-gray-200'
@@ -66,7 +66,7 @@ export default function Header({ currentSection }: HeaderProps) {
               variant="ghost"
               className={`text-lg transition-colors duration-300 ${
                 isInSection2 || isInSection3
-                  ? 'text-black hover:text-gray-800' 
+                  ? 'text-black hover:text-white' 
                   : isScrolled 
                     ? 'text-white hover:text-gray-200' 
                     : 'text-black hover:text-gray-200'

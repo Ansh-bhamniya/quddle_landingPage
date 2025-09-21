@@ -41,7 +41,7 @@ export default function Logo({ size = 'md', showText = true, className = '', isS
         <span
           className={`${textSizeClasses[size]} font-bold transition-colors duration-300 ${
             isInSection2 || isInSection3
-              ? 'text-black group-hover:text-gray-800' 
+              ? 'text-black group-hover:text-white' 
               : isScrolled 
                 ? 'text-white group-hover:text-gray-200' 
                 : 'text-black group-hover:text-gray-200'

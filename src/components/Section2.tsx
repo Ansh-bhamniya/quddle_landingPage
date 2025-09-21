@@ -17,18 +17,21 @@ export default function Section2() {
 
           
           <div className="w-full md:w-1/3 text-left md:text-left z-10 p-4">
-              <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 text-white animate-slide-up font-serif">
-                Book trusted pros for evry chore, big or small
+              <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 text-white animate-slide-up font-serif whitespace-nowrap">
+                Discover 250+ catergories waiting for you.
               </p>
 
-            <p className="text-lg md:text-xl mb-6 text-white opacity-90 animate-slide-up font-dm serif">
-              Stop, sell and Connect around the things you love
+            <p className="text-lg md:text-xl text-white opacity-90 animate-slide-up font-dm serif whitespace-nowrap">
+              From fashion-forward clothes to must have sneakers.
             </p>
+            <p className="text-lg md:text-xl mb-2 text-white opacity-90 animate-slide-up font-dm serif whitespace-nowrap">
+              Dive into cutting-edge electronics and standout sports gear
+            </p>            
             <p className="text-xs  mb-2 text-white opacity-90 animate-slide-up font-dm serif">
               Download Quddle.ai
             </p>
             {/* QR Code */}
-            <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center animate-slide-up p-2">
+            <div className="w-24 h-24 border-2 border-black rounded-lg flex items-center justify-center animate-slide-up p-2">
               <Image
                 src="/qr.png"
                 alt="QR Code for Quddle.ai"
