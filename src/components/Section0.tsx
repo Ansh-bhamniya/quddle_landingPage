@@ -6,7 +6,7 @@ interface Section0Props {
   scrollToSection: (index: number) => void;
 }
 
-export default function Section0({ scrollToSection }: Section0Props) {
+export default function Section0({  }: Section0Props) {
   return (
     <section
       id="section-0"
