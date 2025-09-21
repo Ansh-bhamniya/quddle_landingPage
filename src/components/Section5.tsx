@@ -7,7 +7,7 @@ interface Section5Props {
   currentSection?: number;
 }
 
-export default function Section5({ currentSection = 5 }: Section5Props) {
+export default function Section5({ }: Section5Props) {
   const [showFooter, setShowFooter] = useState(false);
 
   // Remove automatic footer showing - now controlled by buttons
