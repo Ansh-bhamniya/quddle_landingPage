@@ -33,11 +33,7 @@ export default function Header({ currentSection }: HeaderProps) {
                   : isScrolled 
                     ? 'text-white hover:text-gray-200' 
                     : 'text-black hover:text-gray-200'
-              } transition-colors duration-200 hover:bg-white/20 font-serif`}
-              onClick={() => {
-                const featuresSection = document.getElementById('section-1');
-                featuresSection?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              } transition-colors duration-200 hover:bg-transparent font-serif`}
             >
               Advertiser
             </Button>
@@ -50,30 +46,31 @@ export default function Header({ currentSection }: HeaderProps) {
                   : isScrolled 
                     ? 'text-white hover:text-gray-200' 
                     : 'text-black hover:text-gray-200'
-              } transition-colors duration-200 hover:bg-white/20 font-serif`}
-              onClick={() => {
-                const techSection = document.getElementById('section-2');
-                techSection?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              } transition-colors duration-200 hover:bg-transparent font-serif`}
             >
               Seller
             </Button>
             <Button
-              variant="outline"
-              className={`text-lg transition-colors duration-300 ${isScrolled ? 'text-white border-white/30 ' : 'text-white border-white/30 '} transition-colors duration-200 font-serif `}
-              onClick={() => {
-                const demoSection = document.getElementById('section-3');
-                demoSection?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              variant="ghost"
+              className={`text-lg transition-colors duration-300 ${
+                isInSection2 || isInSection3
+                  ? 'text-black hover:text-gray-800' 
+                  : isScrolled 
+                    ? 'text-white hover:text-gray-200' 
+                    : 'text-black hover:text-gray-200'
+              } transition-colors duration-200 hover:bg-transparent font-serif`}
             >
               Login
             </Button>
             <Button 
-              className={`text-lg transition-colors duration-300 ${isScrolled ? 'bg-white text-gray-900 hover:bg-gray-100' : 'bg-white text-gray-900 hover:bg-gray-100'} transition-colors duration-200 font-serif`}
-              onClick={() => {
-                const ctaSection = document.getElementById('section-4');
-                ctaSection?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              variant="ghost"
+              className={`text-lg transition-colors duration-300 ${
+                isInSection2 || isInSection3
+                  ? 'text-black hover:text-gray-800' 
+                  : isScrolled 
+                    ? 'text-white hover:text-gray-200' 
+                    : 'text-black hover:text-gray-200'
+              } transition-colors duration-200 hover:bg-transparent font-serif`}
             >
               Sign Up
             </Button>

@@ -11,36 +11,26 @@ export default function Section0({  }: Section0Props) {
     <section
       id="section-0"
       className=" h-screen flex items-center text-white relative overflow-hidden "
-      style={{ backgroundColor: '#FAB14F' }}
+      style={{ backgroundColor: '#EFCF45' }}
     >
       {/* Gradient Overlay - Focused on iPhone image */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_25%_50%,_rgba(255,255,255,0.8)_0%,_rgba(255,255,255,0.4)_25%,_rgba(255,255,255,0.1)_50%,_rgba(0,0,0,0.2)_75%,_rgba(0,0,0,0.5)_100%)]"
+        className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_25%_50%,_rgba(239,207,69,0.8)_0%,_rgba(239,207,69,0.4)_25%,_rgba(239,207,69,0.1)_50%,_rgba(0,0,0,0.2)_75%,_rgba(0,0,0,0.5)_100%)]"
       />
 
-      {/* Decorative Image Overlay */}
-      <div className="absolute inset-0 z-5 flex items-center justify-center opacity-20">
-        <Image
-          src="/bg_video.png"
-          alt="Decorative background element"
-          width={1200}
-          height={1000}
-          className="w-full h-full object-cover"
-          priority
-        />
-      </div>
+
 
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-32 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between h-full">
           {/* Left Half: iPhone Image */}
           <div className="w-full md:w-1/2 flex items-center justify-center p-4 relative z-10">
             <Image
-              src="/tab_iphone.png"
+              src="/tab_iphone2.png"
               alt="iPhone showing Quddle.ai app"
-              width={300}
-              height={300}
-              className="w-full max-w-sm h-auto object-contain animate-fade-in"
+              width={600}
+              height={600}
+              className="w-full max-w-lg h-auto object-contain animate-fade-in"
               priority
             />
           </div>

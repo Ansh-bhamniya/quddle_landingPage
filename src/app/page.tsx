@@ -10,6 +10,7 @@ import Section3 from '@/components/Section3';
 import Section4 from '@/components/Section4';
 import Section5 from '@/components/Section5';
 import MobileNavigation from '@/components/MobileNavigation';
+import ChatBubble from '@/components/ChatBubble';
 import { useState } from 'react';
 export default function Home() {
   const [currentSection, setCurrentSection] = useState(0);
@@ -107,6 +108,9 @@ export default function Home() {
         
       
       </Swiper>
+      
+      {/* Chat Bubble Component */}
+      <ChatBubble />
     </div>
   );
 }
