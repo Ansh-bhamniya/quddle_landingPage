@@ -11,12 +11,12 @@ export default function Section0({  }: Section0Props) {
     <section
       id="section-0"
       className=" h-screen flex items-center text-white relative overflow-hidden "
-      style={{ backgroundColor: '#EFCF45' }}
+      style={{ backgroundColor: '#F39B31' }}
     >
-      {/* Gradient Overlay - Focused on iPhone image */}
+      {/* Gradient Overlay - Brighter light around device */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_25%_50%,_rgba(239,207,69,0.8)_0%,_rgba(239,207,69,0.4)_25%,_rgba(239,207,69,0.1)_50%,_rgba(0,0,0,0.2)_75%,_rgba(0,0,0,0.5)_100%)]"
+        className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_25%_50%,_rgba(255,220,120,0.9)_0%,_rgba(255,220,120,0.7)_15%,_rgba(255,200,100,0.5)_30%,_rgba(255,200,100,0.3)_45%,_rgba(255,200,100,0.1)_60%,_rgba(243,155,49,0.8)_75%,_rgba(243,155,49,1)_100%)]"
       />
 
 
