@@ -11,7 +11,6 @@ import Section4 from '@/components/Section4';
 import Section5 from '@/components/Section5';
 import MobileNavigation from '@/components/MobileNavigation';
 import { useState } from 'react';
-import Footer from '@/components/Footer';
 export default function Home() {
   const [currentSection, setCurrentSection] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
