@@ -11,6 +11,9 @@ const dmSerifDisplay = DM_Serif_Display({
 export const metadata: Metadata = {
   title: "Quddle AI - Production Ready Next.js App",
   description: "A production-ready Next.js application with TypeScript, Tailwind CSS, and modern development tools.",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
