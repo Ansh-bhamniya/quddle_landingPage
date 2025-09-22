@@ -12,14 +12,17 @@ export default function Section5({ currentSection }: Section5Props) {
 
   // Automatically show footer after 1 second when user reaches Section5
   useEffect(() => {
+    let timer: ReturnType<typeof setTimeout> | undefined;
     if (currentSection === 5) {
-      const timer = setTimeout(() => {
+      timer = setTimeout(() => {
         setShowFooter(true);
       }, 1000);
-      return () => clearTimeout(timer);
     } else {
       setShowFooter(false);
     }
+    return () => {
+      if (timer) clearTimeout(timer);
+    };
   }, [currentSection]);
 
   const handleShowFooter = () => {
