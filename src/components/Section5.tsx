@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Footer from './Footer';
 import { Button } from '@/components/ui/Button';
 
@@ -7,20 +7,20 @@ interface Section5Props {
   currentSection?: number;
 }
 
-export default function Section5({ }: Section5Props) {
+export default function Section5({ currentSection }: Section5Props) {
   const [showFooter, setShowFooter] = useState(false);
 
-  // Remove automatic footer showing - now controlled by buttons
-  // useEffect(() => {
-  //   if (currentSection === 5) {
-  //     const timer = setTimeout(() => {
-  //       setShowFooter(true);
-  //     }, 1000);
-  //     return () => clearTimeout(timer);
-  //   } else {
-  //     setShowFooter(false);
-  //   }
-  // }, [currentSection]);
+  // Automatically show footer after 1 second when user reaches Section5
+  useEffect(() => {
+    if (currentSection === 5) {
+      const timer = setTimeout(() => {
+        setShowFooter(true);
+      }, 1000);
+      return () => clearTimeout(timer);
+    } else {
+      setShowFooter(false);
+    }
+  }, [currentSection]);
 
   const handleShowFooter = () => {
     setShowFooter(true);
