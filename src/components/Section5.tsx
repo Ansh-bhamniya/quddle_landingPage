@@ -72,7 +72,7 @@ export default function Section5({ }: Section5Props) {
           alt="Golden coin stacks"
           width={800}
           height={400}
-          className="w-96 h-56 sm:w-[28rem] sm:h-[18rem] md:w-[32rem] md:h-[20rem] lg:w-[40rem] lg:h-[24rem] xl:w-[48rem] xl:h-[28rem] 2xl:w-[56rem] 2xl:h-[32rem] object-contain animate-fade-in"
+          className="w-96 h-56 sm:w-[28rem] sm:h-[18rem] md:w-[32rem] md:h-[20rem] lg:w-[40rem] lg:h-[24rem] xl:w-[48rem] xl:h-48 2xl:w-[56rem] 2xl:h-[32rem] object-contain animate-fade-in"
           priority
         />
       </div>
@@ -90,47 +90,54 @@ export default function Section5({ }: Section5Props) {
       </div>      
 
       {/* Main content - Always full screen */}
-      <div className="h-screen flex items-center justify-center">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-32 text-center z-20">
+      <div className="h-screen flex items-center">
+        <div className="container mx-auto px-2 sm:px-4 flex flex-col md:flex-row items-center justify-center h-full">
+          {/* Left Half: Text Content - Full width on mobile, 1/3 on desktop */}
+          <div className="w-full md:w-1/3 text-center md:text-left z-10 p-4">
           {/* Main Headlines */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white font-serif mb-2 animate-slide-up">
+          <h1 className="text-xl md:text-3xl lg:text-4xl font-bold text-white font-serif mb-2 animate-slide-up">
             Spend Smarter
           </h1>
           
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white font-serif mb-2 animate-slide-up">
+          <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-white font-serif mb-2 animate-slide-up whitespace-nowrap">
             Shop, Save, and Shine with Coins
           </h2>
           
           {/* Subtitle */}
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white opacity-90 font-dm serif mb-6 animate-slide-up">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white opacity-90 font-dm serif mb-2 animate-slide-up">
             While you shop, let coins add extra value
           </p>
 
           {/* Download subtitle */}
-          <p className="text-xs sm:text-sm md:text-base mb-2 text-white opacity-90 animate-slide-up font-dm serif">
+          <p className="text-xs mb-2 text-white opacity-90 animate-slide-up font-dm serif">
             Download Quddle.ai
           </p>
           
           {/* QR Code */}
-          <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-white rounded-lg shadow-lg flex items-center justify-center animate-slide-up p-2 mx-auto">
-            <Image
-              src="/qr.png"
-              alt="QR Code for Quddle.ai"
-              width={100}
-              height={100}
-              className="w-full h-full object-contain"
-              priority
-            />
-          </div>
+          <div className="w-24 h-24 bg-white rounded-lg shadow-lg flex items-center justify-center animate-slide-up p-2 mx-auto md:mx-0">
+              <Image
+                src="/qr.png"
+                alt="QR Code for Quddle.ai"
+                width={100}
+                height={100}
+                className="w-full h-full object-contain"
+                priority
+              />
+            </div>
 
           {/* Show Footer Button */}
-          <div className="mt-8 flex justify-center items-center animate-slide-up">
+          <div className="mt-8 flex justify-center md:justify-start items-center animate-slide-up">
             <Button
               onClick={handleShowFooter}
               className="bg-white text-purple-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold"
             >
               Show Footer
             </Button>
+          </div>
+          </div>
+          {/* Right Half: Hidden on mobile, visible on desktop */}
+          <div className="hidden md:flex w-2/3 justify-center items-center z-10 p-4">
+            {/* This space is now available for content like images, videos, etc. */}
           </div>
         </div>
       </div>

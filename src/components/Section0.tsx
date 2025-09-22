@@ -21,7 +21,7 @@ export default function Section0({  }: Section0Props) {
 
 
 
-      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-32 relative z-10">
+      <div className="container mx-auto px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-32 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between h-full">
           {/* Left Half: iPhone Image */}
           <div className="w-full md:w-1/2 flex items-center justify-center p-4 relative z-10">
@@ -30,25 +30,25 @@ export default function Section0({  }: Section0Props) {
               alt="iPhone showing Quddle.ai app"
               width={600}
               height={600}
-              className="w-full max-w-lg h-auto object-contain animate-fade-in"
+              className="w-full max-w-sm sm:max-w-md md:max-w-lg h-auto object-contain animate-fade-in"
               priority
             />
           </div>
           
           {/* Right Half: Text Content */}
           <div className="w-full md:w-1/2 text-center md:text-left z-10 p-4 relative z-10">
-          <p className="text-2xl md:text-7xl lg:text-2xl font-bold mb-1 animate-fade-in text-gray-900 font-serif">
+          <p className="text-2xl md:text-4xl lg:text-5xl font-bold mb-1 animate-fade-in text-gray-900 font-serif">
             Stream.Shop.Shine
           </p>
-          <p className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-gray-900 animate-slide-up font-serif">
-            AI Driven Marketplace.
+          <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 text-gray-900 animate-slide-up font-serif">
+            AI Driven Marketplace
           </p>
 
           <p className="text-xs mb-2 text-gray-800 opacity-90 animate-slide-up font-dm serif">
             Download Quddle.ai
           </p>
           {/* QR Code */}
-          <div className="w-24 h-24 border-2 border-black rounded-lg flex items-center justify-center animate-slide-up p-2 bg-transparent">
+          <div className="w-28 h-28 sm:w-24 sm:h-24 border-2 border-black rounded-lg flex items-center justify-center animate-slide-up p-2 bg-transparent mx-auto sm:mx-0">
             <Image
               src="/qr.png"
               alt="QR Code for Quddle.ai"

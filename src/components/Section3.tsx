@@ -37,7 +37,7 @@ export default function Section3() {
                 alt="Restaurant coupon"
                 width={400}
                 height={300}
-                className={`w-full max-w-md h-auto object-contain transition-opacity duration-5000 ${
+                className={`w-full max-w-sm sm:max-w-md h-auto object-contain transition-opacity duration-5000 ${
                   index === currentImageIndex ? 'opacity-100' : 'opacity-0 absolute'
                 }`}
                 priority={index === 0}
@@ -46,20 +46,20 @@ export default function Section3() {
           </div>
           
           {/* Right half - text content */}
-          <div className="w-full md:w-1/2 text-left md:text-left z-10 p-4">
-            <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 text-black animate-slide-up font-serif whitespace-nowrap">
-            Unlock unbeatables<br />coupons and dining deals
-            every day.
+          <div className="w-full md:w-1/2 text-center md:text-left z-10 p-4">
+            <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 text-black animate-slide-up font-serif">
+            Unlock unbeatable coupons and dining deals every day.
             </p>
             <p className="text-lg md:text-xl mb-2 text-gray-800 opacity-90 animate-slide-up font-dm serif">
-              From top restaurants<br/> to hidden gems, save while you indulge.
+              From top restaurants<br/> to hidden gems, save while you indulge
             </p>
 
             <p className="text-xs mb-2 text-gray-800 opacity-90 animate-slide-up font-dm serif">
               Download Quddle.ai
             </p>
+            
             {/* QR Code */}
-            <div className="w-24 h-24 border-2 border-black rounded-lg flex items-center justify-center animate-slide-up p-2 bg-transparent">
+            <div className="w-24 h-24 border-2 border-black rounded-lg flex items-center justify-center animate-slide-up p-2 bg-transparent mx-auto md:mx-0">
               <Image
                 src="/qr.png"
                 alt="QR Code for Quddle.ai"

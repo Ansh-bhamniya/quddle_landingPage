@@ -12,26 +12,26 @@ export default function Section2() {
           className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_85%_85%,_rgba(255,255,255,0.3)_0%,_rgba(255,255,255,0.1)_20%,_rgba(0,0,0,0.1)_40%,_rgba(0,0,0,0.3)_70%,_rgba(0,0,0,0.5)_100%)]"
         />
   
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center h-full">
-          {/* Left Half: iPhone Image */}
+      <div className="container mx-auto px-2 sm:px-4 flex flex-col md:flex-row items-center justify-center h-full">
+          {/* Left Half: Text Content - Full width on mobile, 1/3 on desktop */}
 
           
-          <div className="w-full md:w-1/3 text-left md:text-left z-10 p-4">
-              <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 text-white animate-slide-up font-serif whitespace-nowrap">
-                Discover 250+ catergories waiting for you.
+          <div className="w-full md:w-1/3 text-center md:text-left z-10 p-4">
+              <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 text-white animate-slide-up font-serif">
+                Discover 250+ catergories waiting for you
               </p>
 
-            <p className="text-lg md:text-xl text-white opacity-90 animate-slide-up font-dm serif whitespace-nowrap">
+            <p className="text-lg md:text-xl text-white opacity-90 animate-slide-up font-dm serif">
               From fashion-forward clothes to must have sneakers.
             </p>
-            <p className="text-lg md:text-xl mb-2 text-white opacity-90 animate-slide-up font-dm serif whitespace-nowrap">
+            <p className="text-lg md:text-xl mb-2 text-white opacity-90 animate-slide-up font-dm serif">
               Dive into cutting-edge electronics and standout sports gear
             </p>            
             <p className="text-xs  mb-2 text-white opacity-90 animate-slide-up font-dm serif">
               Download Quddle.ai
             </p>
             {/* QR Code */}
-            <div className="w-24 h-24 border-2 border-black rounded-lg flex items-center justify-center animate-slide-up p-2">
+            <div className="w-24 h-24 border-2 border-black rounded-lg flex items-center justify-center animate-slide-up p-2 mx-auto md:mx-0">
               <Image
                 src="/qr.png"
                 alt="QR Code for Quddle.ai"
@@ -42,8 +42,10 @@ export default function Section2() {
               />
             </div>
           </div>
-          {/* Right Half: Text Content */}
-          
+          {/* Right Half: Hidden on mobile, visible on desktop */}
+          <div className="hidden md:flex w-2/3 justify-center items-center z-10 p-4">
+            {/* This space is now available for content like images, videos, etc. */}
+          </div>
         </div>
   
       {/* Camera with Box Image - Bottom Right */}

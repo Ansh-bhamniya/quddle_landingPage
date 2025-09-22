@@ -22,24 +22,24 @@ export default function Section1() {
       {/* Video Overlay for better text readability */}
       <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
 
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center h-full relative z-20">
-        {/* Left Half: Text Content */}
+      <div className="container mx-auto px-2 sm:px-4 flex flex-col md:flex-row items-center justify-center h-full relative z-20">
+        {/* Left Half: Text Content - Full width on mobile, half on desktop */}
         <div className="w-full md:w-1/2 text-center md:text-left z-20 p-4 md:pr-8">
-          <p className="text-2xl md:text-7xl lg:text-2xl font-bold mb-1 animate-fade-in text-white font-serif">
+          <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-1 animate-fade-in text-white font-serif">
             Catch the hype live
           </p>
-          <p className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-white animate-slide-up font-serif">
-            In Real Time.
+          <p className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2 text-white animate-slide-up font-serif">
+            In Real Time
           </p>
           <p className="text-lg md:text-xl mb-6 text-white opacity-90 animate-slide-up font-dm serif">
-            Dive into the buzz, live and in the moment.
+            Dive into the buzz and live in the moment
           </p>
           <p className="text-xs mb-2 text-white opacity-90 animate-slide-up font-dm serif">
             Download Quddle.ai
           </p>
           
           {/* QR Code */}
-          <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center animate-slide-up p-2 mx-auto md:mx-0">
+          <div className="w-28 h-28 sm:w-24 sm:h-24 bg-white rounded-lg flex items-center justify-center animate-slide-up p-2 mx-auto md:mx-0">
             <Image
               src="/qr.png"
               alt="QR Code for Quddle.ai"
@@ -50,9 +50,9 @@ export default function Section1() {
             />
           </div>
         </div>
-
-        {/* Right Half: Empty or for future content */}
-        <div className="w-full md:w-1/2 flex justify-center items-center z-20 p-4">
+        
+        {/* Right Half: Hidden on mobile, visible on desktop */}
+        <div className="hidden md:flex w-1/2 justify-center items-center z-20 p-4">
           {/* This space is now available for content like images, videos, etc. */}
         </div>
       </div>
