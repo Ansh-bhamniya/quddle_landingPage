@@ -105,31 +105,31 @@ export default function Header({ currentSection }: HeaderProps) {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-white/20 bg-black">
+          <div className="md:hidden border-t border-white/20 bg-black rounded-b-2xl shadow-lg">
             <div className="px-4 py-4 space-y-3">
               <Button
                 variant="ghost"
-                className="w-full justify-start text-white hover:text-gray-200 hover:bg-white/10 font-serif text-lg"
+                className="w-full justify-start text-white hover:text-gray-200 hover:bg-white/10 font-serif text-lg rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Advertiser
               </Button>
               <Button
                 variant="ghost"
-                className="w-full justify-start text-white hover:text-gray-200 hover:bg-white/10 font-serif text-lg"
+                className="w-full justify-start text-white hover:text-gray-200 hover:bg-white/10 font-serif text-lg rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Seller
               </Button>
               <Button
                 variant="outline"
-                className="w-full justify-center text-white border-white/30 hover:bg-white/20 font-serif text-lg"
+                className="w-full justify-center text-white border-white/30 hover:bg-white/20 font-serif text-lg rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Login
               </Button>
               <Button
-                className="w-full justify-center bg-white text-gray-900 hover:bg-gray-100 font-serif text-lg"
+                className="w-full justify-center bg-white text-gray-900 hover:bg-gray-100 font-serif text-lg rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sign Up

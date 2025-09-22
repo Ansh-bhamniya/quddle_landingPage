@@ -63,6 +63,18 @@ export default function Section5({ }: Section5Props) {
           className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain animate-fade-in"
           priority
         />
+      </div>
+
+      {/* Coin6 in right half of section5 */}
+      <div className="hidden sm-custom:block absolute top-64 right-1/3 transform translate-x-1/2 translate-y-1/16 z-30 ">
+        <Image
+          src="/coin6.png"
+          alt="Golden coin in right half"
+          width={200}
+          height={200}
+          className="w-40 h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 lg:w-52 lg:h-52 xl:w-56 xl:h-56 2xl:w-60 2xl:h-60 object-contain animate-fade-in"
+          priority
+        />
       </div>   
 
       {/* Bottom center coin stacks */}
@@ -118,8 +130,8 @@ export default function Section5({ }: Section5Props) {
               <Image
                 src="/qr.png"
                 alt="QR Code for Quddle.ai"
-                width={100}
-                height={100}
+                width={500}
+                height={500}
                 className="w-full h-full object-contain"
                 priority
               />

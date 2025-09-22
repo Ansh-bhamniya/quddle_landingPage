@@ -102,14 +102,14 @@ export default function Footer({ onClose }: FooterProps) {
       
       {/* Footer Content */}
       <div className="container mx-auto px-4">
-        <div className="flex items-start justify-between w-full">
+        <div className="flex flex-col sm-custom:flex-row items-center sm-custom:items-start justify-between w-full gap-6 sm-custom:gap-0">
           {/* Left Side - Logo and Copyright */}
-          <div className="flex flex-col items-start gap-4">
+          <div className="flex flex-col items-center sm-custom:items-start gap-4">
             {/* Quddle.ai Logo */}
             <Logo size="lg" showText={true} isScrolled={true} />
             
-            {/* Copyright and Legal Text */}
-            <div className="text-sm text-white flex items-center gap-4">
+            {/* Copyright and Legal Text - Responsive Layout */}
+            <div className="text-sm text-white flex flex-wrap items-center justify-center sm-custom:justify-start gap-2 sm-custom:gap-4">
               <span>@ 2025 Quddle.ai</span>
               <span>Terms</span>
               <span>Privacy</span>
@@ -161,32 +161,61 @@ export default function Footer({ onClose }: FooterProps) {
             </div>
           </div>
 
-            {/* Right Side - Social Media Icons - Two Rows */}
-            <div className="flex flex-col gap-8 bg">
-            {/* First Row */}
-            <div className="flex gap-6 p-1">
+          {/* Right Side - Social Media Icons - Responsive Layout */}
+          <div className="flex flex-col gap-4 sm-custom:gap-8">
+            {/* Mobile: Single Row with 4 icons */}
+            <div className="flex gap-4 sm-custom:hidden">
               {socialLinks.slice(0, 4).map((social, index) => {
                 const IconComponent = social.icon;
                 return (
-                  <div key={index} className="flex items-center gap-2  cursor-pointer">
+                  <div key={index} className="flex items-center gap-2 cursor-pointer">
                     <SocialIcon icon={<IconComponent className="w-2 h-2" />} bgColor={social.bgColor} />
-                    <span className="text-sm text-gray-300">{social.name}</span>
+                    <span className="text-xs text-gray-300">{social.name}</span>
                   </div>
                 );
               })}
             </div>
             
-            {/* Second Row */}
-            <div className="flex gap-6 p-1">
+            {/* Mobile: Second Row with 4 icons */}
+            <div className="flex gap-4 sm-custom:hidden">
               {socialLinks.slice(4, 8).map((social, index) => {
                 const IconComponent = social.icon;
                 return (
-                  <div key={index} className="flex items-center gap-2  cursor-pointer">
+                  <div key={index} className="flex items-center gap-2 cursor-pointer">
                     <SocialIcon icon={<IconComponent className="w-2 h-2" />} bgColor={social.bgColor} />
-                    <span className="text-sm text-gray-300">{social.name}</span>
+                    <span className="text-xs text-gray-300">{social.name}</span>
                   </div>
                 );
               })}
+            </div>
+
+            {/* Desktop: Two Rows (hidden on mobile) */}
+            <div className="hidden sm-custom:flex flex-col gap-8">
+              {/* First Row */}
+              <div className="flex gap-6 p-1">
+                {socialLinks.slice(0, 4).map((social, index) => {
+                  const IconComponent = social.icon;
+                  return (
+                    <div key={index} className="flex items-center gap-2 cursor-pointer">
+                      <SocialIcon icon={<IconComponent className="w-2 h-2" />} bgColor={social.bgColor} />
+                      <span className="text-sm text-gray-300">{social.name}</span>
+                    </div>
+                  );
+                })}
+              </div>
+              
+              {/* Second Row */}
+              <div className="flex gap-6 p-1">
+                {socialLinks.slice(4, 8).map((social, index) => {
+                  const IconComponent = social.icon;
+                  return (
+                    <div key={index} className="flex items-center gap-2 cursor-pointer">
+                      <SocialIcon icon={<IconComponent className="w-2 h-2" />} bgColor={social.bgColor} />
+                      <span className="text-sm text-gray-300">{social.name}</span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
