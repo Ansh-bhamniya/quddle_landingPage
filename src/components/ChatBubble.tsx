@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ChatBubble() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,16 +15,14 @@ export default function ChatBubble() {
           className="bg-transparent hover:bg-transparent rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110"
           aria-label="Open chat"
         >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
+          <Image
+            src="/parrot2.gif"
+            alt="Chat"
+            width={80}
+            height={80}
             className="w-20 h-20 rounded-full object-cover"
-          >
-            <source src="/parrot.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+            priority
+          />
         </button>
       </div>
 

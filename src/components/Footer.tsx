@@ -161,10 +161,28 @@ export default function Footer({ onClose }: FooterProps) {
             </div>
           </div>
 
+          {/* Middle - Stats */}
+          <div className="flex flex-col items-center mx-2 sm-custom:mx-8">
+            <div className="flex items-end gap-8 sm-custom:gap-12">
+              <div className="text-center">
+                <div className="text-4xl sm-custom:text-5xl font-extrabold leading-none">0+</div>
+                <div className="text-sm sm-custom:text-base opacity-80">Users</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl sm-custom:text-5xl font-extrabold leading-none">0+</div>
+                <div className="text-sm sm-custom:text-base opacity-80">Advertiser</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl sm-custom:text-5xl font-extrabold leading-none">0+</div>
+                <div className="text-sm sm-custom:text-base opacity-80">Seller</div>
+              </div>
+            </div>
+          </div>
+
           {/* Right Side - Social Media Icons - Responsive Layout */}
-          <div className="flex flex-col gap-4 sm-custom:gap-8">
+          <div className="flex flex-col gap-1 sm-custom:gap-2">
             {/* Mobile: Single Row with 4 icons */}
-            <div className="flex gap-4 sm-custom:hidden">
+            <div className="flex gap-4 sm-custom:hidden p-2">
               {socialLinks.slice(0, 4).map((social, index) => {
                 const IconComponent = social.icon;
                 return (
@@ -177,7 +195,7 @@ export default function Footer({ onClose }: FooterProps) {
             </div>
             
             {/* Mobile: Second Row with 4 icons */}
-            <div className="flex gap-4 sm-custom:hidden">
+            <div className="flex gap-4 sm-custom:hidden p-2">
               {socialLinks.slice(4, 8).map((social, index) => {
                 const IconComponent = social.icon;
                 return (
@@ -190,9 +208,9 @@ export default function Footer({ onClose }: FooterProps) {
             </div>
 
             {/* Desktop: Two Rows (hidden on mobile) */}
-            <div className="hidden sm-custom:flex flex-col gap-8">
+            <div className="hidden sm-custom:flex flex-col gap-2">
               {/* First Row */}
-              <div className="flex gap-6 p-1">
+              <div className="flex gap-6 p-2">
                 {socialLinks.slice(0, 4).map((social, index) => {
                   const IconComponent = social.icon;
                   return (
@@ -205,7 +223,7 @@ export default function Footer({ onClose }: FooterProps) {
               </div>
               
               {/* Second Row */}
-              <div className="flex gap-6 p-1">
+              <div className="flex gap-6 p-2">
                 {socialLinks.slice(4, 8).map((social, index) => {
                   const IconComponent = social.icon;
                   return (

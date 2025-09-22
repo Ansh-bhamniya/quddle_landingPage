@@ -50,7 +50,7 @@ export default function Section0({  }: Section0Props) {
           {/* QR Code */}
           <div className="w-28 h-28 sm:w-24 sm:h-24 border-2 border-black rounded-lg flex items-center justify-center animate-slide-up p-2 bg-transparent mx-auto sm:mx-0">
             <Image
-              src="/qr.png"
+              src="/newqr2.png"
               alt="QR Code for Quddle.ai"
               width={100}
               height={100}

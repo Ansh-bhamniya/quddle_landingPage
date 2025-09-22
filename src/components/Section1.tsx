@@ -15,7 +15,7 @@ export default function Section1() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
-        <source src="/video1.mp4" type="video/mp4" />
+        <source src="/nnn9.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       
@@ -41,7 +41,7 @@ export default function Section1() {
           {/* QR Code */}
           <div className="w-28 h-28 sm:w-24 sm:h-24 bg-white rounded-lg flex items-center justify-center animate-slide-up p-2 mx-auto md:mx-0">
             <Image
-              src="/qr.png"
+              src="/newqr2.png"
               alt="QR Code for Quddle.ai"
               width={100}
               height={100}

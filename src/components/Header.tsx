@@ -35,7 +35,7 @@ export default function Header({ currentSection }: HeaderProps) {
                     : 'text-black hover:text-gray-200'
               } transition-colors duration-200 hover:bg-transparent font-serif`}
             >
-              Advertiser
+              Advertisers
             </Button>
 
             <Button
@@ -48,7 +48,7 @@ export default function Header({ currentSection }: HeaderProps) {
                     : 'text-black hover:text-gray-200'
               } transition-colors duration-200 hover:bg-transparent font-serif`}
             >
-              Seller
+              Sellers
             </Button>
             <Button
               variant="ghost"

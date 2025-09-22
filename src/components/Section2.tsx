@@ -18,7 +18,7 @@ export default function Section2() {
           
           <div className="w-full md:w-1/3 text-center md:text-left z-10 p-4">
               <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 text-white animate-slide-up font-serif">
-                Discover 250+ catergories waiting for you
+                Discover 250+ categories waiting for you
               </p>
 
             <p className="text-lg md:text-xl text-white opacity-90 animate-slide-up font-dm serif">
@@ -31,9 +31,9 @@ export default function Section2() {
               Download Quddle.ai
             </p>
             {/* QR Code */}
-            <div className="w-24 h-24 border-2 border-black rounded-lg flex items-center justify-center animate-slide-up p-2 mx-auto md:mx-0">
+            <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center animate-slide-up p-2 mx-auto md:mx-0">
               <Image
-                src="/qr.png"
+                src="/newqr2.png"
                 alt="QR Code for Quddle.ai"
                 width={100}
                 height={100}

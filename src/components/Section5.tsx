@@ -34,7 +34,7 @@ export default function Section5({ }: Section5Props) {
     <section
       id="section-5"
       className="h-screen relative overflow-hidden"
-      style={{ backgroundColor: '#3E39FF' }}
+      style={{ backgroundColor: '#4A68A4' }}
     >
       {/* Gradient Overlay - Center to Corners */}
       <div
@@ -128,7 +128,7 @@ export default function Section5({ }: Section5Props) {
           {/* QR Code */}
           <div className="w-24 h-24 bg-white rounded-lg shadow-lg flex items-center justify-center animate-slide-up p-2 mx-auto md:mx-0">
               <Image
-                src="/qr.png"
+                src="/newqr2.png"
                 alt="QR Code for Quddle.ai"
                 width={500}
                 height={500}

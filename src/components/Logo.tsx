@@ -8,9 +8,12 @@ interface LogoProps {
   isScrolled?: boolean;
   isInSection2?: boolean;
   isInSection3?: boolean;
+  isInSection4?: boolean;
+  isInSection5?: boolean;
+  isInSection1?: boolean;
 }
 
-export default function Logo({ size = 'md', showText = true, className = '', isScrolled = false, isInSection2 = false, isInSection3 = false }: LogoProps) {
+export default function Logo({ size = 'md', showText = true, className = '', isScrolled = false, isInSection2 = false, isInSection3 = false, isInSection4 = false, isInSection5 = false, isInSection1 = false }: LogoProps) {
   const sizeClasses = {
     sm: 'w-6 h-6',   // 24px
     md: 'w-8 h-8',   // 32px
@@ -41,10 +44,12 @@ export default function Logo({ size = 'md', showText = true, className = '', isS
         <span
           className={`${textSizeClasses[size]} font-bold transition-colors duration-300 ${
             isInSection2 || isInSection3
-              ? 'text-black group-hover:text-white' 
-              : isScrolled 
-                ? 'text-white group-hover:text-gray-200' 
-                : 'text-black group-hover:text-gray-200'
+              ? 'text-black group-hover:text-white'
+              : (isInSection1 || isInSection4 || isInSection5)
+                ? 'text-white group-hover:text-black'
+                : isScrolled
+                  ? 'text-white group-hover:text-gray-200'
+                  : 'text-black group-hover:text-gray-200'
           } transition-colors duration-200 font-serif`}
         >
           Quddle.ai
